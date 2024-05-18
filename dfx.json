@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "lolcoin_backend": {
+      "main": "src/lolcoin_backend/main.mo",
+      "type": "motoko"
+    },
+    "lolcoin_frontend": {
+      "dependencies": [
+        "lolcoin_backend"
+      ],
+      "source": [
+        "src/lolcoin_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "lolcoin_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
