@@ -7,47 +7,48 @@ body {
   header {
     background-color: #f1f1f1;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   h1 {
-    font-size: 2em;
-    margin-bottom: 0;
+    font-size: 1.8em;
+    margin-left: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
   }
   
   main {
     padding: 20px;
+    text-align: center;
   }
   
-  .about, .features {
+  p {
+    font-size: 1.2em;
     margin-bottom: 20px;
   }
   
-  h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  .features ul {
+  ul {
     list-style: none;
     padding: 0;
   }
   
-  .features li {
+  li {
     margin-bottom: 10px;
   }
   
-  .call-to-action {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .call-to-action a {
+  a {
     background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
+    margin-top: 20px;
+    display: block;
   }
   
   footer {
