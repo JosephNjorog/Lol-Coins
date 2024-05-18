@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: lightyellow;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -13,9 +13,10 @@ body {
 }
 
 header {
-    background-color: #ffcc00;
+    background-color: blueviolet;
     padding: 20px;
     border-bottom: 2px solid #000;
+    border-radius: 10px;
 }
 
 header h1 {
@@ -38,7 +39,8 @@ section {
 }
 
 footer {
-    background-color: #ffcc00;
+    background-color: blueviolet;
     padding: 10px;
     border-top: 2px solid #000;
+    border-radius: 10px;
 }
