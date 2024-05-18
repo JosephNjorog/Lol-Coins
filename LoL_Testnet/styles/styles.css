@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#app {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 20px;
+    border-bottom: 2px solid #000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #ffcc00;
+    padding: 10px;
+    border-top: 2px solid #000;
+}
