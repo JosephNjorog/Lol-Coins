@@ -5,10 +5,27 @@
 html,
 body {
   overflow-x: hidden;
-  font-family: 'Archivo Black';ijun h'h
-  jbijhbu a  cukn uu 
-  n uumuuhh ylj
+  font-family: 'Archivo Black';
+  }
+  .imglogo {
+     /* Center the image */
+    animation: rotateLogo 2s forwards; /* Animation name, duration, and repeat behavior */
 }
+
+@keyframes rotateLogo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(45deg);
+    }
+}
+
+
+
+
+
+
 @keyframes customBounce {
   30% {
       transform: scale(1.2);
