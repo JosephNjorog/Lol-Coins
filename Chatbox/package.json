@@ -1,0 +1,15 @@
+{
+    "name": "lol-coin-chatbox",
+    "version": "1.0.0",
+    "description": "A chatbox for LOL Coin community",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "body-parser": "^1.19.0",
+      "express": "^4.17.1",
+      "socket.io": "^4.0.0"
+    }
+  }
+  
