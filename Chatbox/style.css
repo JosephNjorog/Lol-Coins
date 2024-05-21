@@ -1,0 +1,91 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container */
+.main-container {
+  width: 50%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Room controls */
+.room-controls {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.room-controls input[type="text"] {
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.room-controls .btn {
+  margin-left: 10px;
+}
+
+/* Messages container */
+.messages-container {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.messages-container p {
+  background-color: #e1f5fe;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.messages-container small {
+  display: block;
+  text-align: right;
+  color: #777;
+}
+
+/* Input box */
+.text-box {
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* Search input */
+.search-input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Placeholder color */
+input::placeholder {
+  color: #aaa;
+}

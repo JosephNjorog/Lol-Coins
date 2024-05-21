@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html ng-app="chatroom">
+<head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-controller="mainCtrl">
+    <div class="main-container">
+        <h1>LoLCoin Chat Room</h1>
+        
+        <!-- Room creation and selection -->
+        <div class="room-controls">
+            <input class="form-control" type="text" ng-model="newRoomName" placeholder="Create new room..." />
+            <button class="btn btn-primary" ng-click="createRoom()">Create Room</button>
+            <div>
+                <label for="roomSelect">Select Room:</label>
+                <select class="form-control" id="roomSelect" ng-model="currentRoomId" ng-change="switchRoom(currentRoomId)">
+                    <option ng-repeat="room in rooms" value="{{room.objectId}}">{{room.name}}</option>
+                </select>
+            </div>
+        </div>
+
+        <form ng-submit="postData()">
+            <input class="form-control text-box" type="text" ng-model="newMessage" placeholder="Type a message..." />
+            <button class="btn btn-success" type="submit">Send</button>
+        </form>
+
+        <div class="messages-container">
+            <div ng-repeat="message in messages | filter:searchText | orderBy:'-createdAt' track by $index">
+                <p>{{message.text}}</p>
+                <small>{{message.createdAtFormatted}}</small>
+            </div>
+        </div>
+
+        <input class="form-control" type="text" ng-model="searchText" placeholder="Search messages..." />
+    </div>
+    
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/mainCtrl.js"></script>
+    <script src="js/parseService.js"></script>
+    <script src="js/defaultHeaders.js"></script>
+</body>
+</html>
