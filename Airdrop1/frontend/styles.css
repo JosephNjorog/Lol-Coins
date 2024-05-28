@@ -1,0 +1,53 @@
+body {
+    font-family: 'Minecraft', sans-serif;
+    background: linear-gradient(to bottom, #000000, #1f1f1f);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(#00ff00, #00aa00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom, #1f1f1f, #333333);
+    color: #ffffff;
+}
+
+button {
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #00ff00, #00aa00);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #00aa00, #008800);
+}
+
+#responseMessage {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
