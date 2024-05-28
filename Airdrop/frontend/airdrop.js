@@ -4,9 +4,6 @@ document.getElementById('airdropForm').addEventListener('submit', async (e) => {
     const responseMessage = document.getElementById('responseMessage');
     
     try {
-        // Perform input validation (e.g., check for empty input)
-
-        // Send a POST request to register the wallet address
         const response = await fetch('/register', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -16,13 +13,13 @@ document.getElementById('airdropForm').addEventListener('submit', async (e) => {
         const data = await response.json();
         if (data.success) {
             responseMessage.textContent = 'Registered successfully!';
-            responseMessage.style.color = 'green';
+            responseMessage.style.color = '#00ff00';
         } else {
             responseMessage.textContent = data.message;
-            responseMessage.style.color = 'red';
+            responseMessage.style.color = '#ff0000';
         }
     } catch (error) {
         responseMessage.textContent = 'An error occurred. Please try again.';
-        responseMessage.style.color = 'red';
+        responseMessage.style.color = '#ff0000';
     }
 });

@@ -45,4 +45,4 @@ Join us on this exciting journey and experience the fun side of cryptocurrency w
 ---
 *Stay tuned for updates and announcements from the LoLFunCoin team.*
 
-![LoLFunCoin Logo](images/lolfuncoin_logo.png)
+![LoLFunCoin Logo](images/capy.png)
