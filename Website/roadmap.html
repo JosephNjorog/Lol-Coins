@@ -4,218 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOL Fun Coin Roadmap</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .roadmap {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .phase {
-            margin-bottom: 40px;
-            position: relative;
-            overflow: hidden;
-        }
-        .phase-title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            position: relative;
-            z-index: 2;
-        }
-        .phase-description {
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-        .milestone {
-            margin-bottom: 20px;
-            position: relative;
-            transition: transform 0.3s ease-in-out;
-            transform: translateX(-100%);
-            opacity: 0;
-        }
-        .milestone:hover {
-            transform: translateX(0);
-            opacity: 1;
-        }
-        .milestone-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .milestone-description {
-            font-size: 14px;
-        }
-        .phase:nth-child(even) .milestone:nth-child(odd),
-        .phase:nth-child(odd) .milestone:nth-child(even) {
-            background-color: #f7f7f7;
-        }
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            transition: transform 0.3s ease-in-out;
-            z-index: 1;
-            opacity: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #fff;
-            padding: 20px;
-        }
-        .milestone:hover .overlay {
-            transform: translateX(100%);
-            opacity: 1;
-        }
-        .waveform {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 50px;
-            background-image: linear-gradient(to right, #333, #444);
-            background-size: 100px 50px;
-            background-position: 0% 100%;
-            animation: waveform 3s ease-in-out infinite;
-        }
-        @keyframes waveform {
-            0% {
-                background-position: 0% 100%;
-            }
-            100% {
-                background-position: 100% 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="roadmap">
         <h1>LOL Fun Coin Roadmap</h1>
+
+        <!-- Phase 1: Foundation -->
         <div class="phase">
+            <div class="waveform"></div>
             <h2 class="phase-title">Phase 1: Foundation</h2>
-            <p class="phase-description">In this phase, we embarked on an extensive market research journey to identify the pain points of small businesses in transaction processing. We defined LOL Fun Coin's core objectives, identified our target demographics, and outlined the unique value proposition of our coin in the market.</p>
+            <p class="phase-description">Completed (5th September 2024 - 6th August 2024)</p>
             <div class="milestone">
                 <h3 class="milestone-title">Research and Conceptualization</h3>
-                <p class="milestone-description">Extensive market research was conducted to identify the specific pain points of small businesses in transaction processing. This phase included defining LOL Fun Coin's core objectives, identifying target demographics, and outlining the unique value proposition of the coin in the market.</p>
+                <p class="milestone-description">Completed extensive market research, identifying key pain points and opportunities in small business transactions. Defined LOL Fun Coin’s core objectives and features.</p>
                 <div class="overlay">
-                    <p>Learn More</p>
+                    <p>Research and Conceptualization: Completed extensive market research, identifying key pain points and opportunities in small business transactions. Defined LOL Fun Coin’s core objectives and features.</p>
                 </div>
             </div>
             <div class="milestone">
                 <h3 class="milestone-title">Team Formation</h3>
-                <p class="milestone-description">A dedicated team of blockchain developers, cybersecurity experts, legal advisors, and marketing specialists was assembled. Each member brought a unique skill set to the project, ensuring comprehensive coverage of technical, legal, and promotional aspects.</p>
+                <p class="milestone-description">Assembled a team of blockchain developers, cybersecurity experts, legal advisors, and marketing specialists, laying a solid foundation for the project.</p>
                 <div class="overlay">
-                    <p>Meet the Team</p>
+                    <p>Team Formation: Assembled a team of blockchain developers, cybersecurity experts, legal advisors, and marketing specialists, laying a solid foundation for the project.</p>
                 </div>
             </div>
             <div class="milestone">
                 <h3 class="milestone-title">Whitepaper Development</h3>
-                <p class="milestone-description">A detailed whitepaper was crafted, outlining LOL Fun Coin's technical architecture, tokenomics, and strategic roadmap. The document served as a foundational guide for stakeholders, providing transparency and credibility to potential investors and community members.</p>
+                <p class="milestone-description">Crafted a comprehensive whitepaper detailing LOL Fun Coin’s technical architecture, tokenomics, and roadmap, gathering feedback from industry experts and stakeholders.</p>
                 <div class="overlay">
-                    <p>Read Whitepaper</p>
+                    <p>Whitepaper Development: Crafted a comprehensive whitepaper detailing LOL Fun Coin’s technical architecture, tokenomics, and roadmap, gathering feedback from industry experts and stakeholders.</p>
                 </div>
             </div>
             <div class="milestone">
                 <h3 class="milestone-title">Strategic Partnerships</h3>
-                <p class="milestone-description">Collaborations were forged with strategic partners including fintech firms, small businesses, and regulatory bodies. These partnerships were crucial in fostering credibility, compliance, and operational readiness for LOL Fun Coin's launch and adoption.</p>
+                <p class="milestone-description">Established key partnerships with fintech companies, small businesses, and regulatory bodies, ensuring credibility, compliance, and readiness for adoption.</p>
                 <div class="overlay">
-                    <p>Explore Partnerships</p>
+                    <p>Strategic Partnerships: Established key partnerships with fintech companies, small businesses, and regulatory bodies, ensuring credibility, compliance, and readiness for adoption.</p>
                 </div>
             </div>
         </div>
+
+        <!-- Phase 2: Development -->
         <div class="phase">
+            <div class="waveform"></div>
             <h2 class="phase-title">Phase 2: Development</h2>
-            <p class="phase-description">In this phase, we meticulously developed LOL Fun Coin's blockchain infrastructure, ensuring scalability, robust security features, and seamless interoperability with existing blockchain networks.</p>
+            <p class="phase-description">Completed (5th September 2024 - 6th August 2024)</p>
             <div class="milestone">
                 <h3 class="milestone-title">Blockchain Development</h3>
-                <p class="milestone-description">LOL Fun Coin's blockchain infrastructure was meticulously developed to ensure scalability, robust security features, and seamless interoperability with existing blockchain networks. Emphasis was placed on optimizing transaction speeds and</p>
+                <p class="milestone-description">Developed LOL Fun Coin’s blockchain infrastructure, ensuring scalability, security, and interoperability with existing blockchain networks.</p>
                 <div class="overlay">
-                    <p>Learn More</p>
+                    <p>Blockchain Development: Developed LOL Fun Coin’s blockchain infrastructure, ensuring scalability, security, and interoperability with existing blockchain networks.</p>
                 </div>
             </div>
             <div class="milestone">
                 <h3 class="milestone-title">Smart Contract Implementation</h3>
-                <p class="milestone-description">Design and deploy smart contracts to automate transactions, enforce business logic, and enhance operational efficiency for users.</p>
+                <p class="milestone-description">Designed and deployed secure smart contracts to automate transactions, enhancing operational efficiency for users.</p>
                 <div class="overlay">
-                    <p>Explore Contracts</p>
+                    <p>Smart Contract Implementation: Designed and deployed secure smart contracts to automate transactions, enhancing operational efficiency for users.</p>
                 </div>
             </div>
             <div class="milestone">
                 <h3 class="milestone-title">Wallet Interface</h3>
-                <p class="milestone-description">Develop an intuitive and secure wallet interface for desktop and mobile platforms, ensuring seamless user experience and accessibility.</p>
+                <p class="milestone-description">Developed a user-friendly and secure wallet interface for both desktop and mobile platforms, ensuring a seamless user experience.</p>
                 <div class="overlay">
-                    <p>Access Wallet</p>
+                    <p>Wallet Interface: Developed a user-friendly and secure wallet interface for both desktop and mobile platforms, ensuring a seamless user experience.</p>
                 </div>
             </div>
             <div class="milestone">
                 <h3 class="milestone-title">Security and Testing</h3>
-                <p class="milestone-description">Conduct rigorous security audits and penetration testing to identify and mitigate vulnerabilities. Implement robust cybersecurity measures to protect user assets and data.</p>
+                <p class="milestone-description">Conducted rigorous security audits and penetration testing, implementing robust cybersecurity measures to protect user assets and data.</p>
                 <div class="overlay">
-                    <p>Security Details</p>
+                    <p>Security and Testing: Conducted rigorous security audits and penetration testing, implementing robust cybersecurity measures to protect user assets and data.</p>
                 </div>
             </div>
         </div>
+
+        <!-- Phase 3: Launch and Adoption -->
         <div class="phase">
-            <h2 class="phase-title">Phase 3: Launch and Adoption (Q3-Q4 2025)</h2>
-            <p class="phase-description">Officially launch LOL Fun Coin on mainnet, enabling users to transact securely and affordably. Celebrate with community events and promotional campaigns.</p>
+            <div class="waveform"></div>
+            <h2 class="phase-title">Phase 3: Launch and Adoption</h2>
+            <p class="phase-description">Q3 2024</p>
             <div class="milestone">
                 <h3 class="milestone-title">Launch of LOL Fun Coin</h3>
-                <p class="milestone-description">Officially launch LOL Fun Coin on mainnet, enabling users to transact securely and affordably. Celebrate with community events and promotional campaigns.</p>
+                <p class="milestone-description">Successfully launched LOL Fun Coin on the mainnet, enabling secure and affordable transactions. Marked the occasion with community events and promotional campaigns.</p>
                 <div class="overlay">
-                    <p>Launch Details</p>
+                    <p>Launch of LOL Fun Coin: Successfully launched LOL Fun Coin on the mainnet, enabling secure and affordable transactions. Marked the occasion with community events and promotional campaigns.</p>
                 </div>
             </div>
             <div class="milestone">
                 <h3 class="milestone-title">Community Building</h3>
-                <p class="milestone-description">Foster an active and engaged community through social media, forums, and educational webinars. Provide resources and incentives to encourage early adoption and participation.</p>
+                <p class="milestone-description">Fostered an active and engaged community through social media, forums, and educational webinars. Provided resources and incentives to encourage early adoption.</p>
                 <div class="overlay">
-                    <p>Join the Community</p>
+                    <p>Community Building: Fostered an active and engaged community through social media, forums, and educational webinars. Provided resources and incentives to encourage early adoption.</p>
                 </div>
             </div>
             <div class="milestone">
                 <h3 class="milestone-title">Merchant Integration</h3>
-                <p class="milestone-description">Partner with small businesses and e-commerce platforms to integrate LOL Fun Coin as a payment option, showcasing its usability and benefits in real-world transactions.</p>
+                <p class="milestone-description">Partnered with small businesses and e-commerce platforms to integrate LOL Fun Coin as a payment option, demonstrating its usability in real-world transactions.</p>
                 <div class="overlay">
-                    <p>Explore Integration</p>
+                    <p>Merchant Integration: Partnered with small businesses and e-commerce platforms to integrate LOL Fun Coin as a payment option, demonstrating its usability in real-world transactions.</p>
                 </div>
             </div>
         </div>
+
+        <!-- Phase 4: Expansion and Innovation -->
         <div class="phase">
-            <h2 class="phase-title">Phase 4: Expansion and Innovation (2026 and Beyond)</h2>
-            <p class="phase-description">Implement continuous improvements and updates based on user feedback and technological advancements. Explore opportunities for enhancing scalability, privacy features, and sustainability.</p>
+            <div class="waveform"></div>
+            <h2 class="phase-title">Phase 4: Expansion and Innovation</h2>
+            <p class="phase-description">2025 and Beyond</p>
             <div class="milestone">
                 <h3 class="milestone-title">Continuous Development</h3>
-                <p class="milestone-description">Implement continuous improvements and updates based on user feedback and technological advancements. Explore opportunities for enhancing scalability, privacy features, and sustainability.</p>
+                <p class="milestone-description">Implementing ongoing improvements and updates based on user feedback and technological advancements. Exploring enhancements in scalability, privacy features, and sustainability.</p>
                 <div class="overlay">
-                    <p>Explore Updates</p>
+                    <p>Continuous Development: Implementing ongoing improvements and updates based on user feedback and technological advancements. Exploring enhancements in scalability, privacy features, and sustainability.</p>
                 </div>
             </div>
             <div class="milestone">
                 <h3 class="milestone-title">Global Outreach</h3>
-                <p class="milestone-description">Expand LOL Fun Coin's presence internationally through strategic marketing initiatives and partnerships. Collaborate with global organizations to promote financial inclusivity and accessibility.</p>
+                <p class="milestone-description">Expanded LOL Fun Coin’s presence internationally through strategic marketing initiatives and partnerships. Collaborated with global organizations to promote financial inclusivity and accessibility.</p>
                 <div class="overlay">
-                    <p>Global Initiatives</p>
+                    <p>Global Outreach: Expanded LOL Fun Coin’s presence internationally through strategic marketing initiatives and partnerships. Collaborated with global organizations to promote financial inclusivity and accessibility.</p>
                 </div>
             </div>
             <div class="milestone">
                 <h3 class="milestone-title">Research and Innovation</h3>
-                <p class="milestone-description">Invest in research and development to explore cutting-edge technologies such as blockchain interoperability, decentralized finance (DeFi) integrations, and artificial intelligence (AI) for automated governance.</p>
+                <p class="milestone-description">Invested in research and development, exploring cutting-edge technologies such as blockchain interoperability, decentralized finance (DeFi) integrations, and artificial intelligence (AI) for automated governance.</p>
                 <div class="overlay">
-                    <p>Explore Innovation</p>
+                    <p>Research and Innovation: Invested in research and development, exploring cutting-edge technologies such as blockchain interoperability, decentralized finance (DeFi) integrations, and artificial intelligence (AI) for automated governance.</p>
                 </div>
             </div>
         </div>

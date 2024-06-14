@@ -1,57 +1,118 @@
-* {
-  scroll-behavior: smooth;
-}
-
-html,
 body {
-  overflow-x: hidden;
-  font-family: 'Archivo Black';
-  }
-  .imglogo {
-     /* Center the image */
-    animation: rotateLogo 2s forwards; /* Animation name, duration, and repeat behavior */
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes rotateLogo {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(45deg);
-    }
+.roadmap {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-
-
-
-
-
-@keyframes customBounce {
-  30% {
-      transform: scale(1.2);
-  }
-
-  40%,
-  60% {
-      transform: rotate(-20deg) scale(1.2);
-  }
-
-  50% {
-      transform: rotate(20deg) scale(1.2);
-  }
-
-  70% {
-      transform: rotate(0deg) scale(1.2);
-  }
-
-  100% {
-      transform: scale(1);
-  }
+.phase {
+  margin-bottom: 40px;
+  position: relative;
 }
 
-.about-logos {
-  animation: customBounce 1.5s infinite;
+.phase-title {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  margin: 0;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
 }
-.w-full button:hover .svgg path {
-  fill: black;
+
+.phase-description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
 }
+
+.milestone {
+  margin-top: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.milestone-title {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+.milestone-description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+  max-width: 600px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.overlay p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.milestone:hover .overlay {
+  opacity: 1;
+}
+
+.waveform {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  transform: translateY(-50%);
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.waveform::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -10px;
+  right: -10px;
+  bottom: -5px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  border-radius: 20px;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.waveform::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -10px;
+  right: -10px;
+  bottom: -5px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  border-radius: 20px;
+  z-index: -1;
+  filter: blur(30px);
+}
+
