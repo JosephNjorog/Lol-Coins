@@ -3,105 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$LoLCoin Progress</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="dist/output.css" />
-  <link rel="stylesheet" href="index.css" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@500&family=Poppins&family=Roboto:wght@500&family=Rubik+Bubbles&family=Rubik+Doodle+Shadow&family=Tomorrow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
-
-
-  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
-  <link rel="icon" type="image/x-icon" href="images/capy.png">
-    
-    <link rel="stylesheet" href="dist/output.css">
+    <title>LOL Fun Coin Roadmap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .roadmap {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .phase {
+            margin-bottom: 20px;
+        }
+        .phase-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .phase-description {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .milestone {
+            margin-bottom: 10px;
+        }
+        .milestone-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .milestone-description {
+            font-size: 14px;
+        }
+        .waveform {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-image: linear-gradient(to right, #333, #444);
+            background-size: 100px 50px;
+            background-position: 0% 100%;
+            animation: waveform 3s ease-in-out infinite;
+        }
+        @keyframes waveform {
+            0% {
+                background-position: 0% 100%;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+    </style>
 </head>
-<body class="font-Montserrat bg-black">
-    <header class="bg-cyan-500 p-4">
-        <h1 class="text-left text-4xl lg:text-7xl text-cyan-500 glow-text" style="background-image: linear-gradient(to right, cyan, violet);
-        color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;">$LoLCoin Journey</h1>
-    </header>
-    <main class="p-8">
-        <section id="progress-timeline" class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-semibold mb-8 text-center">Development Stage</h2>
-            <div class="relative">
-                <div class="border-l-4 border-cyan-500 absolute h-full top-0 left-1/2 transform -translate-x-1/2"></div>
-                <!-- Developing Stage -->
-                <div class="mb-8 flex items-center w-full">
-                    <div class="order-1 w-5/12"></div>
-                    <div class="z-20 flex items-center order-1 bg-cyan-500 shadow-xl w-8 h-8 rounded-full">
-                        <svg class="w-6 h-6 text-white mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-2a9 9 0 11-6.72-8.44" />
-                        </svg>
-                    </div>
-                    <div class="order-1 bg-gray-800 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                        <h3 class="mb-3 font-bold text-white text-xl">Development</h3>
-                        <p class="text-sm leading-snug tracking-wide text-white text-opacity-100">
-                            Initial and currentstage where the core development of the memecoin is taking place.
-                        </p>
-                    </div>
-                </div>
-                <!-- Distribution Stage -->
-                <div class="mb-8 flex items-center w-full flex-row-reverse">
-                    <div class="order-1 w-5/12"></div>
-                    <div class="z-20 flex items-center order-1 bg-cyan-500 shadow-xl w-8 h-8 rounded-full">
-                        <svg class="w-6 h-6 text-white mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m-6 4H3v-6h6v6zM21 3H7v6h14V3z" />
-                        </svg>
-                    </div>
-                    <div class="order-1 bg-gray-800 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                        <h3 class="mb-3 font-bold text-white text-xl">Distribution</h3>
-                        <p class="text-sm leading-snug tracking-wide text-white text-opacity-100">
-                            Distribution of the memecoin tokens to early investors, advisors, and initial holders through various channels and methods and Aidrops.
-                        </p>
-                    </div>
-                </div>
-                <!-- Launch Stage -->
-                <div class="mb-8 flex items-center w-full">
-                    <div class="order-1 w-5/12"></div>
-                    <div class="z-20 flex items-center order-1 bg-cyan-500 shadow-xl w-8 h-8 rounded-full">
-                        <svg class="w-6 h-6 text-white mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                    </div>
-                    <div class="order-1 bg-gray-800 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                        <h3 class="mb-3 font-bold text-white text-xl">Launch</h3>
-                        <p class="text-sm leading-snug tracking-wide text-white text-opacity-100">
-                            Official launch of the memecoin on various exchanges, including marketing efforts and listing on popular tracking platforms.
-                        </p>
-                    </div>
-                </div>
-                <!-- Testing Stage -->
-                <div class="mb-8 flex items-center w-full flex-row-reverse">
-                    <div class="order-1 w-5/12"></div>
-                    <div class="z-20 flex items-center order-1 bg-cyan-500 shadow-xl w-8 h-8 rounded-full">
-                        <svg class="w-6 h-6 text-white mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h3m0 0h3m-3-3v6m0-6l4-4m-4 4l-4-4" />
-                        </svg>
-                    </div>
-                    <div class="order-1 bg-gray-800 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                        <h3 class="mb-3 font-bold text-white text-xl">Testing</h3>
-                        <p class="text-sm leading-snug tracking-wide text-white text-opacity-100">
-                            Rigorous testing phase to ensure the security, functionality, and performance of the memecoin on various platforms and environments.
-                        </p>
-                    </div>
-                </div>
+<body>
+    <div class="roadmap">
+        <h1>LOL Fun Coin Roadmap</h1>
+        <div class="phase">
+            <h2 class="phase-title">Phase 1: Foundation</h2>
+            <p class="phase-description">In this phase, we embarked on an extensive market research journey to identify the pain points of small businesses in transaction processing. We defined LOL Fun Coin's core objectives, identified our target demographics, and outlined the unique value proposition of our coin in the market.</p>
+            <div class="milestone">
+                <h3 class="milestone-title">Research and Conceptualization</h3>
+                <p class="milestone-description">Extensive market research was conducted to identify the specific pain points of small businesses in transaction processing. This phase included defining LOL Fun Coin's core objectives, identifying target demographics, and outlining the unique value proposition of the coin in the market.</p>
             </div>
-        </section>
-    </main>
-    <footer class="bg-gray-900 text-white py-4 text-center mt-10">
-        <div>
-            <p class="text-sm text-white">&copy; 2024 LoLcoin Project. All rights reserved.</p>
+            <div class="milestone">
+                <h3 class="milestone-title">Team Formation</h3>
+                <p class="milestone-description">A dedicated team of blockchain developers, cybersecurity experts, legal advisors, and marketing specialists was assembled. Each member brought a unique skill set to the project, ensuring comprehensive coverage of technical, legal, and promotional aspects.</p>
+            </div>
+            <div class="milestone">
+                <h3 class="milestone-title">Whitepaper Development</h3>
+                <p class="milestone-description">A detailed whitepaper was crafted, outlining LOL Fun Coin's technical architecture, tokenomics, and strategic roadmap. The document served as a foundational guide for stakeholders, providing transparency and credibility to potential investors and community members.</p>
+            </div>
+            <div class="milestone">
+                <h3 class="milestone-title">Strategic Partnerships</h3>
+                <p class="milestone-description">Collaborations were forged with strategic partners including fintech firms, small businesses, and regulatory bodies. These partnerships were crucial in fostering credibility, compliance, and operational readiness for LOL Fun Coin's launch and adoption.</p>
+            </div>
         </div>
-    </footer>
-</body>
-</html>
-    
+        <div class="phase">
+            <h2 class="phase-title">Phase 2: Development</h2>
+            <p class="phase-description">In this phase, we meticulously developed LOL Fun Coin's blockchain infrastructure, ensuring scalability, robust security features, and seamless interoperability with existing blockchain networks.</p>
+            <div class="milestone">
+                <h3 class="milestone-title">Blockchain Development</h3>
+                <p class="milestone-description">LOL Fun Coin's blockchain infrastructure was meticulously developed to ensure scalability, robust security features, and seamless interoperability with existing blockchain networks. Emphasis was placed on optimizing transaction speeds and
